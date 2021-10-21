@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .video-block{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 350px;
+      }
+      .video-block video{
+        border: 1px solid;
+        width: 50%;
+        height: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-block">
+      <video id="self-video" autoplay></video>
+      <video id="other-video" autoplay></video>
+    </div>
+    <div class="message-block">
+
+    </div>
+    <div class="send-block">
+      <textarea name="name" id="message-text" rows="8" cols="80"></textarea>
+      <button type="button" id="send" name="button">Send</button>
+    </div>
+
+
+    <script type="module" src="/static/client.js"></script>
+  </body>
+</html>
